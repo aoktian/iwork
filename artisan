@@ -1,0 +1,19 @@
+<?php
+define( 'CONSOLE', true );
+include 'i.php';
+
+if (!isset($argv[1])) {exit();}
+
+parse_str($argv[1], $_GET);
+$ctl = $_GET['ctl'];
+$act = isset($_GET['act']) ? $_GET['act'] : 'handle';
+
+define( 'CONTROLLER', $ctl );
+define( 'ACTION', $act );
+define( 'PATH', '/' . $ctl . '/' . $act );
+
+include ROOT_DIR . '/console/' . $ctl . '.php';
+$controller = new Controller( );
+$controller->$act( );
+
+

@@ -1,0 +1,19 @@
+{
+    "require": {
+        "league/plates": "~3.3",
+        "workerman/mysql": "~1.0",
+        "aura/session": "~2.1"
+    },
+    "autoload":{
+        "files": ["app/helper.php"],
+        "psr-4" : {
+            "I\\" : "app/"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}

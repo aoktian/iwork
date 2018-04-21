@@ -1,0 +1,40 @@
+body {
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体"
+}
+.lineright {
+    height: 18px;
+    line-height: 18px;
+    margin: 0 8px 0 0;
+    text-align: right;
+    clear: both;
+}
+
+td, th {
+    white-space: nowrap;
+}
+
+.vertical-middle > thead > tr > th,
+.vertical-middle > tbody > tr > th,
+.vertical-middle > tfoot > tr > th,
+.vertical-middle > thead > tr > td,
+.vertical-middle > tbody > tr > td,
+.vertical-middle > tfoot > tr > td {
+  vertical-align:middle;
+}
+
+.margin-right {
+  margin-right:20px;
+}
+
+.progress {margin-bottom: 0;}
+
+.bg-red {color: #fff; background-color: red;}
+.bg-green {color: #fff; background-color: green;}
+
+.text-normal {color : #000;}
+.text-red {color : red;}
+.text-success {color:green;}
+.line {margin-bottom: 10px;}
+.ipre {background: none; border : none;}
+
+.hand {cursor: pointer;}

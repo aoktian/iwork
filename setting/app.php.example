@@ -1,0 +1,6 @@
+<?php
+return [
+    'timezone' => 'Asia/Shanghai',
+    'images' => '/home/images/'
+
+];
